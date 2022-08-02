@@ -1,17 +1,21 @@
+import CircleProfile from "components/circleProfile";
 import tw from "tailwind-styled-components";
-import { AiFillHome } from "react-icons/ai";
-// const Container = tw.div`
-
-// `;
-const TabBar = () => {
+import profileImg from "asset/img/profile.jpeg";
+const Container = tw.div`
+    flex justify-between items-center
+    pt-5
+`;
+const Title = tw.p`
+    text-3xl
+    text-[#555759]
+`;
+const NavBar = () => {
   return (
-    <div className="flex  w-screen fixed bottom-0 shadow-[0_3px_60px_-15px_rgba(0,0,0,0.3)] justify-around py-8 rounded-t-[50px]">
-      <AiFillHome></AiFillHome>
-      <AiFillHome></AiFillHome>
-      <AiFillHome></AiFillHome>
-      <AiFillHome></AiFillHome>
-    </div>
+    <Container>
+      <Title>Music</Title>
+      <CircleProfile imgFile={profileImg} />
+    </Container>
   );
 };
 
-export default TabBar;
+export default NavBar;
