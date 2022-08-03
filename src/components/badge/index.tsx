@@ -7,7 +7,6 @@ interface BadgeProps {
   //   fontSize:
 }
 const Container = tw.div`
-    
     inline-block
     px-3 py-1 
     rounded-2xl
@@ -17,7 +16,6 @@ const Container = tw.div`
 `;
 
 const Contents = tw.p`
-    
     text-sm
 `;
 const Badge = (props: BadgeProps) => {

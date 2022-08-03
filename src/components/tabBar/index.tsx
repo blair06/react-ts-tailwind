@@ -3,7 +3,13 @@ import { AiFillHome } from "react-icons/ai";
 import { FiSearch, FiHeart } from "react-icons/fi";
 import { BsPerson } from "react-icons/bs";
 const Container = tw.div`
-    flex  w-screen fixed bottom-0 shadow-[0_3px_60px_-15px_rgba(0,0,0,0.3)] justify-around py-8 rounded-t-[50px]
+    flex  justify-around
+    w-screen 
+    fixed bottom-0 
+    shadow-[0_3px_60px_-15px_rgba(0,0,0,0.3)]  
+    py-8 
+    rounded-t-[50px]
+    bg-white
 `;
 const TabBar = () => {
   return (

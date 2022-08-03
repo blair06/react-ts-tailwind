@@ -4,14 +4,29 @@ interface AlbumCardProps {
   title: string;
   singer: string;
 }
+
+const Container = tw.div`
+    w-full
+`;
+const Image = tw.img`
+    border rounded-2xl mb-3
+`;
+const Title = tw.p`
+    text-m text-gray-500 
+    font-semibold
+`;
+const Singer = tw.p`
+    text-xs text-gray-400 
+    font-semibold
+`;
 const AlbumCard = (props: AlbumCardProps) => {
   const { imgFile, title, singer } = props;
   return (
-    <div className="w-full">
-      <img src={imgFile} alt="albumCover" />
-      <p>{title}</p>
-      <p>{singer}</p>
-    </div>
+    <Container>
+      <Image src={imgFile} alt="albumCover" />
+      <Title>{title}</Title>
+      <Singer>{singer}</Singer>
+    </Container>
   );
 };
 
