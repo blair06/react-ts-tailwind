@@ -31,10 +31,20 @@ const Carousel = () => {
           />
         </div>
         <div>
-          <h3>2</h3>
+          <PhotoCard
+            className={"h-52 shadow-[1px_2px_20px_0px_#92eaf8a3]"}
+            imgFile={main}
+            badge="#Trending01"
+            desc="Listen Best Hitz World PlayList"
+          />
         </div>
         <div>
-          <h3>3</h3>
+          <PhotoCard
+            className={"h-52 shadow-[1px_2px_20px_0px_#92eaf8a3]"}
+            imgFile={main}
+            badge="#Trending01"
+            desc="Listen Best Hitz World PlayList"
+          />
         </div>
       </Slider>
     </div>

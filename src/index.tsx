@@ -1,6 +1,8 @@
+import MusicAppDetail from "pages/musicApp/detail";
 import MusicAppMain from "pages/musicApp/main";
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
@@ -9,7 +11,12 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <MusicAppMain />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MusicAppMain />} />
+        <Route path="/detail" element={<MusicAppDetail />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
